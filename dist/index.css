@@ -1,74 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-html {
-    height: 100vh;
-}
-
-body{
-    /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Lobster', cursive; 
-    color:white;
-    background:linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.35),rgba(0,0,0,0)),
-        url(./assets/foodd.jpg)no-repeat;
-    background-size:cover;
+@font-face {
+    font-family: 'Cassandra';
+    src: url('./assets/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf') format('truetype');
 }
 
-.box{
-width:900px;
-float:right;
-border: 1px solid none;
+:root {
+    --pink: #EC6792;
+    --blue: #3EC0E4;
 }
-.box ul li{
-width:150px;
-float:left;
-margin: 10px auto;
-text-align:center;
-}
-.box ul li a{
-    text-decoration: none;
-    color: darkgray;
-}
-.box ul li:hover{background-color: green;}
-.box ul li a:hover{ color:white;} 
 
-.wd {
-    width: 300px;
-    height: 550px;
-    background-color: black;
-    opacity: 0.9;
-    padding: 55px;
+#content {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Navbar styles start here */
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 1);
+    padding-left: 1rem;
+    padding-right: 1rem;
     align-items: center;
+    z-index: 10;
+    padding: 0 2rem;
 }
 
-.wd h1 {
-    text-transform: uppercase;
-    font-weight: 100px;
-}
-
-.wd h4 {
-    color: darkgray;
-    font-weight: normal;
-}
-
-.wd h2 {
-    text-transform: uppercase;
-    font-weight: normal;
-    margin: 30px;
-}
-
-.btn {
-    background-color: black;
+nav h1 {
+    font-family: 'Cassandra', cursive;
     color: white;
-    border: 1px solid white;
-    border-radius: 0%;
-    padding: 15px 20px;
-    text-align: center;
+    font-size: 2rem;
 }
 
-.btn:hover {
-    background-color: white;
-    color: black;
+nav ul {
+    display: flex;
+    gap: 1.25rem;
+    font-family: 'Gotham Medium', sans-serif;
 }
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav ul a:hover {
+    color: var(--pink);
+}
+
+/* Navbar styles end  here */
+
+/* Welcome Section Styles begin here */
+
+#hero {
+    background:linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.35),rgba(0,0,0,0)),
+        url('./assets/iStock-530583274.jpg')no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    z-index: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cta {
+    color: white;
+    font-family: 'Cassandra', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    font-family: 'Gothic Medium', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Welcome Section Styles end here*/
