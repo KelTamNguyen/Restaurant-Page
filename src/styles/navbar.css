@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../assets/Gotham\ Medium\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cassandra';
+    src: url('../assets/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf') format('truetype');
+}
+
+:root {
+    --pink: #EC6792;
+    --blue: #3EC0E4;
+    --black: rgba(0, 0, 0, 0.9);
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background: var(--black);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    z-index: 10;
+    padding: 0 2rem;
+}
+
+nav h1 {
+    font-family: 'Cassandra', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.25rem;
+    font-family: 'Gotham Medium', sans-serif;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav ul a:hover {
+    color: var(--pink);
+}
