@@ -1,16 +1,23 @@
-import './styles/navbar.css';
-import './styles/home.css'
-import './styles/footer.css';
-import navbar from './components/navbar';
-import footer from './components/footer';
-import home from './home';
+import footer from "./components/footer";
+import initialPageLoad from "./functions/initialPageLoad";
+import loadHome from './functions/loadHome';
+import loadMenu from "./functions/loadMenu";
+import loadContact from "./functions/loadContact";
 
-function loadPage() {
-    console.log('This site is built using Webpack!');
+function addNavEvents() {
+    const home = document.getElementById('home');
+    const menu = document.getElementById('menu');
+    const contact = document.getElementById('contact');
+    home.addEventListener('click', loadHome);
 
-    navbar();
-    home();
-    footer();
+    menu.addEventListener('click', loadMenu);
+
+    contact.addEventListener('click', loadContact);
 }
 
-loadPage();
+function main() {
+    initialPageLoad();
+    addNavEvents();
+}
+
+main();

@@ -41,12 +41,12 @@ nav ul {
     font-family: 'Gotham Medium', sans-serif;
 }
 
-nav ul a {
+nav ul span {
     color: white;
     text-decoration: none;
     font-size: 1.25rem;
 }
 
-nav ul a:hover {
+nav ul span:hover {
     color: var(--pink);
 }

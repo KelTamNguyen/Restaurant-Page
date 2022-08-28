@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../assets/Gotham\ Medium\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cassandra';
+    src: url('../assets/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf') format('truetype');
+}
+
+:root {
+    --pink: #EC6792;
+    --blue: #3EC0E4;
+}
