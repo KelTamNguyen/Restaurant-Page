@@ -50,11 +50,43 @@ section {
 #contacts-container {
     color: white;
     font-family: 'Gotham Medium', sans-serif;
-    width: 80%;
+    width: 75%;
     border-radius: 8px;
-    padding: 24px;
+    padding: 32px;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
-    /* gap: 12px; */
     justify-content: space-between;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-icon {
+    height: 20px;
+    width: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button[type^="submit"] {
+    font-family: 'Cassandra', cursive;
+    background-color: black;
+    color: white;
+}
+
+button[type^="submit"]:hover {
+    background-color: white;
+    color: black;
 }

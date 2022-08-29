@@ -49,4 +49,5 @@ nav ul span {
 
 nav ul span:hover {
     color: var(--pink);
+    cursor: pointer;
 }
