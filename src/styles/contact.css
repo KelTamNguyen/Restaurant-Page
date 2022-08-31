@@ -52,7 +52,7 @@ section {
     font-family: 'Gotham Medium', sans-serif;
     width: 75%;
     border-radius: 8px;
-    padding: 32px;
+    padding: 24px;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
@@ -84,9 +84,17 @@ button[type^="submit"] {
     font-family: 'Cassandra', cursive;
     background-color: black;
     color: white;
+    border-radius: 8px;
 }
 
 button[type^="submit"]:hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 1024px) {
+    #contacts-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

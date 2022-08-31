@@ -57,7 +57,6 @@ export default function loadContact(){
     info.appendChild(hoursLine);
 
     const mailForm = document.createElement('form');
-    // mailForm.onsubmit = 'return false';
     let formTitle = document.createElement('div');
     formTitle.classList.add('info-line')
     let envelopeIcon = document.createElement('img');
@@ -93,8 +92,12 @@ export default function loadContact(){
     formGroup.appendChild(email);
     let messageLabel = document.createElement('label');
     messageLabel.for = 'Message';
+    messageLabel.textContent = 'Feedback';
+    formGroup.appendChild(messageLabel);
     let message = document.createElement('textarea');
     message.placeholder = 'Write Us Here!'
+    message.cols = 60;
+    message.rows = 8;
     formGroup.appendChild(message);
     let sendBtn = document.createElement('button');
     sendBtn.type = 'submit';
