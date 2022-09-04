@@ -20,6 +20,7 @@ nav {
     top: 0;
     left: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background: var(--black);
     padding-left: 1rem;
@@ -29,25 +30,57 @@ nav {
     padding: 0 2rem;
 }
 
-nav h1 {
+.logo {
     font-family: 'Cassandra', cursive;
     color: white;
     font-size: 2rem;
 }
 
-nav ul {
+.nav-links {
     display: flex;
     gap: 1.25rem;
     font-family: 'Gotham Medium', sans-serif;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul span {
+#nav-links span {
     color: white;
     text-decoration: none;
     font-size: 1.25rem;
 }
 
-nav ul span:hover {
+#nav-links span:hover {
     color: var(--pink);
     cursor: pointer;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+@media (max-width:768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

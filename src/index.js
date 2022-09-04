@@ -5,14 +5,24 @@ import loadMenu from "./functions/loadMenu";
 import loadContact from "./functions/loadContact";
 
 function addNavEvents() {
+    const navLinks = document.getElementById('nav-links');
     const home = document.getElementById('home');
     const menu = document.getElementById('menu');
     const contact = document.getElementById('contact');
-    home.addEventListener('click', loadHome);
+    home.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        loadHome()
+    });
 
-    menu.addEventListener('click', loadMenu);
+    menu.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        loadMenu()
+    });
 
-    contact.addEventListener('click', loadContact);
+    contact.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        loadContact()
+    });
 }
 
 function main() {
