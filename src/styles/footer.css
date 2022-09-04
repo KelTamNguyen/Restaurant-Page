@@ -49,3 +49,14 @@ footer p {
 .fa-github-square:hover {
     color: var(--pink);
 }
+
+#attribution-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 12px;
+}
+
+#attribution-grid a {
+    font-size: 12px;
+}
