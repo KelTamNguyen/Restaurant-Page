@@ -15,7 +15,7 @@
 
 #hero {
     background:linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.35),rgba(0,0,0,0)),
-        url('../assets/macaroons.jpg')no-repeat;
+        url('../assets/shelf.jpg')no-repeat;
     background-size: cover; 
     height: 100vh;
     z-index: 0;
@@ -44,7 +44,24 @@
 #message {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
+}
+
+#message button {
+    background-color: var(--blue);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Gotham Medium', sans-serif;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#message button:hover {
+    background-color: white;
+    color: var(--blue);
 }
 
 section {
@@ -72,6 +89,30 @@ section {
     height: 2px;
     background: var(--pink);
     position: absolute;
+}
+
+.home-img {
+    width: 100%;
+    height: auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    width: 90%;
+    font-family: 'Gotham Medium', sans-serif;
+}
+
+.about-header {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.about-paragraph {
+    color: var(--pink);
+    font-size: 1.5rem;
 }
 
 #hours-container {
