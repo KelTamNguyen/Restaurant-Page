@@ -286,7 +286,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"ba4f661aec947b576e57.ttf\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/Gotham_Medium_Regular.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/Gotham Medium Regular.ttf\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/Gotham_Medium_Regular.ttf?");
 
 /***/ }),
 
@@ -296,7 +296,7 @@ eval("module.exports = __webpack_require__.p + \"ba4f661aec947b576e57.ttf\";\n\n
   \************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"5e5380c1b2beae0d8a1a.ttf\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/CassandraPersonalUseRegular-3BjG.ttf\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf?");
 
 /***/ }),
 
@@ -306,7 +306,7 @@ eval("module.exports = __webpack_require__.p + \"5e5380c1b2beae0d8a1a.ttf\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"d1badd0805fb5618642d.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/clock.png?");
+eval("module.exports = __webpack_require__.p + \"assets/clock.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/clock.png?");
 
 /***/ }),
 
@@ -316,7 +316,7 @@ eval("module.exports = __webpack_require__.p + \"d1badd0805fb5618642d.png\";\n\n
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"98115679f9d4709db07f.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/cookies/black-and-white-cookie.jpg?");
+eval("module.exports = __webpack_require__.p + \"assets/black-and-white-cookie.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/cookies/black-and-white-cookie.jpg?");
 
 /***/ }),
 
@@ -326,7 +326,7 @@ eval("module.exports = __webpack_require__.p + \"98115679f9d4709db07f.jpg\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"b8107c75d310242b849f.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/email.png?");
+eval("module.exports = __webpack_require__.p + \"assets/email.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/email.png?");
 
 /***/ }),
 
@@ -336,7 +336,7 @@ eval("module.exports = __webpack_require__.p + \"b8107c75d310242b849f.png\";\n\n
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"db2cc30333e8a992e278.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/menu-bg.jpg?");
+eval("module.exports = __webpack_require__.p + \"assets/menu-bg.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/menu-bg.jpg?");
 
 /***/ }),
 
@@ -346,7 +346,7 @@ eval("module.exports = __webpack_require__.p + \"db2cc30333e8a992e278.jpg\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"fd7700fa7f9bba0feea9.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/phone-call.png?");
+eval("module.exports = __webpack_require__.p + \"assets/phone-call.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/phone-call.png?");
 
 /***/ }),
 
@@ -356,7 +356,7 @@ eval("module.exports = __webpack_require__.p + \"fd7700fa7f9bba0feea9.png\";\n\n
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"0e22cbcec6405cbeeb5a.avif\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/photo-1622405207562-735fa49ff7f7.avif?");
+eval("module.exports = __webpack_require__.p + \"assets/photo-1622405207562-735fa49ff7f7.avif\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/photo-1622405207562-735fa49ff7f7.avif?");
 
 /***/ }),
 
@@ -366,7 +366,7 @@ eval("module.exports = __webpack_require__.p + \"0e22cbcec6405cbeeb5a.avif\";\n\
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"7a887a1bddfad7d40504.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/placeholder.png?");
+eval("module.exports = __webpack_require__.p + \"assets/placeholder.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/placeholder.png?");
 
 /***/ }),
 
@@ -376,7 +376,7 @@ eval("module.exports = __webpack_require__.p + \"7a887a1bddfad7d40504.png\";\n\n
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"5b95d0c8fb9793b19b6f.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/shelf.jpg?");
+eval("module.exports = __webpack_require__.p + \"assets/shelf.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/assets/shelf.jpg?");
 
 /***/ })
 
