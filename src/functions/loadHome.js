@@ -48,7 +48,6 @@ export default function loadHome() {
                 <h1 class="about-header">Who Are We?</h1>
                 <p class="about-paragraph">
                     We are La Pâtisserie, a bakery specializing in cookies since 1969. 
-
                 </p>
             </div>
             <div>
@@ -67,30 +66,30 @@ export default function loadHome() {
 
     aboutSection.appendChild(aboutContainer);
     
-    // const hoursContainer = document.createElement('div');
-    // hoursContainer.id = 'hours-container';
-    // let monday = document.createElement('p');
-    // monday.textContent = 'Monday 8AM-5PM';
-    // hoursContainer.appendChild(monday);
-    // let tuesday = document.createElement('p');
-    // tuesday.textContent = 'Tuesday CLOSED';
-    // hoursContainer.appendChild(tuesday);
-    // let wednesday = document.createElement('p');
-    // wednesday.textContent = 'Wednesday 8AM-5PM';
-    // hoursContainer.appendChild(wednesday);
-    // let thursday = document.createElement('p');
-    // thursday.textContent = 'Thursday 8AM-5PM';
-    // hoursContainer.appendChild(thursday);
-    // let friday = document.createElement('p');
-    // friday.textContent = 'Fridday 8AM-5PM';
-    // hoursContainer.appendChild(friday);
-    // let saturday = document.createElement('p');
-    // saturday.textContent = 'Saturday 8AM-5PM';
-    // hoursContainer.appendChild(saturday);
-    // let sunday = document.createElement('p');
-    // sunday.textContent = 'Sunday 8AM-5PM';
-    // hoursContainer.appendChild(sunday);
-    // aboutSection.appendChild(hoursContainer);
+    const hoursContainer = document.createElement('div');
+    hoursContainer.id = 'hours-container';
+    let monday = document.createElement('p');
+    monday.textContent = 'Monday: 8AM-5PM';
+    hoursContainer.appendChild(monday);
+    let tuesday = document.createElement('p');
+    tuesday.textContent = 'Tuesday: CLOSED';
+    hoursContainer.appendChild(tuesday);
+    let wednesday = document.createElement('p');
+    wednesday.textContent = 'Wednesday: 8AM-5PM';
+    hoursContainer.appendChild(wednesday);
+    let thursday = document.createElement('p');
+    thursday.textContent = 'Thursday: 8AM-5PM';
+    hoursContainer.appendChild(thursday);
+    let friday = document.createElement('p');
+    friday.textContent = 'Friday: 8AM-5PM';
+    hoursContainer.appendChild(friday);
+    let saturday = document.createElement('p');
+    saturday.textContent = 'Saturday: 8AM-5PM';
+    hoursContainer.appendChild(saturday);
+    let sunday = document.createElement('p');
+    sunday.textContent = 'Sunday: 8AM-5PM';
+    hoursContainer.appendChild(sunday);
+    aboutSection.appendChild(hoursContainer);
     
     content.appendChild(aboutSection);
 

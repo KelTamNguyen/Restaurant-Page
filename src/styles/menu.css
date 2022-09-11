@@ -12,3 +12,27 @@
     --pink: #EC6792;
     --blue: #3EC0E4;
 }
+
+.menu-section {
+    text-align: center;
+    background: url('../assets/photo-1622405207562-735fa49ff7f7.avif') no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.menu-grid {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.menu-item  img{
+    height: 200px;
+    width: 200px;
+}
+
+.item-description {
+    color: white;
+    font-family: 'Gotham Medium', sans-serif;
+}
