@@ -6,6 +6,7 @@ import '../styles/footer.css';
 
 export default function loadHome() {
     clearContent();
+    window.scroll(0, 0);
     
     const content = document.getElementById('content');
 
