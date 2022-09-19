@@ -1,0 +1,42 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 1.25rem;
+  gap: 1rem;
+}
+footer p {
+  margin: 0;
+}
+
+.attribution {
+  color: white;
+  text-decoration: none;
+}
+.attribution:hover {
+  color: #EC6792;
+  text-decoration: underline;
+}
+
+.fa-github-square {
+  color: white;
+  font-size: 32px;
+}
+.fa-github-square:hover {
+  color: #EC6792;
+}
+
+#attribution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 12px;
+}
+#attribution-grid a {
+  font-size: 12px;
+}/*# sourceMappingURL=new-footer.css.map */

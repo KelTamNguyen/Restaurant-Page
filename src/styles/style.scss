@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../assets/fonts/Gotham Medium Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Cassandra";
+    src: url("../assets/fonts/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
+}
+
+@import "new-navbar";
+@import "new-home";
+@import "new-menu";
+@import "new-contact";
+@import "new-footer";

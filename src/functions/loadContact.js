@@ -1,7 +1,5 @@
 import clearContent from "./clearContent";
 import footer from "../components/footer";
-import '../styles/contact.css';
-import '../styles/footer.css';
 import location from '../assets/placeholder.png';
 import phone from '../assets/phone-call.png';
 import clock from '../assets/clock.png';

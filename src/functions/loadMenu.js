@@ -1,7 +1,7 @@
 import clearContent from "./clearContent";
 import footer from "../components/footer";
-import '../styles/menu.css';
-import '../styles/footer.css';
+// import '../styles/menu.css';
+// import '../styles/footer.css';
 import blackAndWhite from '../assets/cookies/black-and-white-cookie.jpg';
 import chineseAlmond from '../assets/cookies/almond-cookies.jpg';
 import anzacBiscuit from '../assets/cookies/Anzac-Biscuits.jpg';
@@ -19,7 +19,7 @@ export default function loadMenu() {
     menuSection.innerHTML = `
         <h1 id="menu-title">Menu</h1>
         <div id="menu-container">
-            <div class="menu-grid" id="menu-grid">
+            <div id="menu-grid">
                 <div class="menu-item">
                     <img src="${blackAndWhite}">
                     <div class="item-description">

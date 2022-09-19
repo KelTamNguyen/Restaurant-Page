@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../assets/fonts/Gotham Medium Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cassandra";
+  src: url("../assets/fonts/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
+}
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.9);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  z-index: 10;
+  padding: 0 2rem;
+}
+
+#nav-links {
+  display: flex;
+  gap: 1.25rem;
+  font-family: "Gotham Medium", sans-serif;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+#nav-links li {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+#nav-links li:hover {
+  color: #EC6792;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Cassandra", cursive;
+  color: white;
+  font-size: 1.75rem;
+}
+
+.active {
+  color: #EC6792 !important;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("../assets/shelf.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cta {
+  color: white;
+  font-family: "Cassandra", cursive;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#subtitle {
+  font-family: "Gotham Medium", sans-serif;
+  color: white;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#message button {
+  background-color: #3EC0E4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  font-family: "Gotham Medium", sans-serif;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+#message button:hover {
+  background-color: white;
+  color: #3EC0E4;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cassandra", cursive;
+  color: #3EC0E4;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  top: 110%;
+  right: 10%;
+  width: 50%;
+  height: 2px;
+  background: #EC6792;
+  position: absolute;
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+  width: 90%;
+  font-family: "Gotham Medium", sans-serif;
+}
+
+.about-header {
+  color: #3EC0E4;
+  font-size: 2rem;
+}
+
+.about-paragraph {
+  color: #EC6792;
+  font-size: 1.5rem;
+}
+
+#hours-container {
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+  background-color: #EC6792;
+  width: 80%;
+  border-radius: 12px;
+  padding: 12px;
+}
+#hours-container p {
+  font-size: 1.15rem;
+}
+
+.menu-section {
+  text-align: center;
+  background: url("../assets/photo-1622405207562-735fa49ff7f7.avif") no-repeat;
+  /* background: url('../assets//ariana-suarez-W1Q6TAotxfY-unsplash.jpg') no-repeat; */
+  background-size: cover;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#menu-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cassandra", cursive;
+  color: #EC6792;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+#menu-title::after {
+  content: "";
+  top: 110%;
+  right: 10%;
+  width: 50%;
+  height: 2px;
+  background: white;
+  position: absolute;
+}
+
+#menu-container {
+  width: 75%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+#menu-grid {
+  display: grid;
+  /* width: 75%; */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.menu-item img {
+  height: 300px;
+  width: 300px;
+}
+
+.item-description {
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+}
+
+#contacts {
+  background: url("../assets/menu-bg.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 24px 0;
+}
+
+#contacts-container {
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+  width: 75%;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-icon {
+  height: 20px;
+  width: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button[type^=submit] {
+  font-family: "Cassandra", cursive;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 8px;
+}
+
+button[type^=submit]:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  #contacts-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: white;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 1.25rem;
+  gap: 1rem;
+}
+footer p {
+  margin: 0;
+}
+
+.attribution {
+  color: white;
+  text-decoration: none;
+}
+.attribution:hover {
+  color: #EC6792;
+  text-decoration: underline;
+}
+
+.fa-github-square {
+  color: white;
+  font-size: 32px;
+}
+.fa-github-square:hover {
+  color: #EC6792;
+}
+
+#attribution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 12px;
+}
+#attribution-grid a {
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

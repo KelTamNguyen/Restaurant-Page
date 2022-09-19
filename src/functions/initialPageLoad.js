@@ -1,4 +1,4 @@
-import '../styles/navbar.css';
+import '../styles/style.css'
 import navbar from '../components/navbar';
 import loadHome from './loadHome';
 

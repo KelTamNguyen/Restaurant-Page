@@ -8,7 +8,7 @@ export default function navbar() {
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </button>
-        <ul id="nav-links" class="nav-links">
+        <ul id="nav-links">
             <li id="home" class="active">Home</li>
             <li id="menu">Menu</li>
             <li id="contact">Contact</li>
