@@ -1,0 +1,32 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+%title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: $cassandra;
+    margin-bottom: 1.5rem;
+    position: relative;
+    &::after {
+        content: "";
+        top: 110%;
+        right: 10%;
+        width: 50%;
+        height: 2px;
+        position: absolute;
+    }
+}
+
+.section-title {
+    // @include title($blue, $pink);
+    @extend %title;
+    color: $blue;
+    &::after {
+        background: $pink;
+    }
+}

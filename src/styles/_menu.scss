@@ -1,5 +1,3 @@
-@import "theme";
-
 .menu-section {
     text-align: center;
     background: url('../assets/photo-1622405207562-735fa49ff7f7.avif') no-repeat;
@@ -11,21 +9,11 @@
 
 // this @extends .sectio-title in new-home.scss
 #menu-title {
-    font-size: 3rem;
-    text-align: center;
-    font-family: $cassandra;
-    color: $pink;
-    margin-bottom: 1.5rem;
-    position: relative;
-
+    // @include title(yellow, $white)
+    @extend %title;
+    color: yellow;
     &::after {
-        content: "";
-        top: 110%;;
-        right: 10%;
-        width: 50%;
-        height: 2px;
         background: $white;
-        position: absolute;
     }
 }
 

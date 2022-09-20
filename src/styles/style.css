@@ -76,6 +76,37 @@ nav {
     display: block;
   }
 }
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+#menu-title, .section-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Cassandra", cursive;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+#menu-title::after, .section-title::after {
+  content: "";
+  top: 110%;
+  right: 10%;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+}
+
+.section-title {
+  color: #3EC0E4;
+}
+.section-title::after {
+  background: #EC6792;
+}
+
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0)), url("../assets/shelf.jpg") no-repeat;
   background-size: cover;
@@ -124,32 +155,6 @@ nav {
   color: #3EC0E4;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-}
-
-.section-title {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Cassandra", cursive;
-  color: #3EC0E4;
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-.section-title::after {
-  content: "";
-  top: 110%;
-  right: 10%;
-  width: 50%;
-  height: 2px;
-  background: #EC6792;
-  position: absolute;
-}
-
 .home-img {
   width: 100%;
   height: auto;
@@ -196,21 +201,10 @@ section {
 }
 
 #menu-title {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Cassandra", cursive;
-  color: #EC6792;
-  margin-bottom: 1.5rem;
-  position: relative;
+  color: yellow;
 }
 #menu-title::after {
-  content: "";
-  top: 110%;
-  right: 10%;
-  width: 50%;
-  height: 2px;
   background: white;
-  position: absolute;
 }
 
 #menu-container {
