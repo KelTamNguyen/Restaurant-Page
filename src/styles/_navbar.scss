@@ -21,16 +21,37 @@ nav {
     align-items: center;
     justify-content: center;
     list-style: none;
-
+    cursor: pointer;
     li {
         color: $white;
         text-decoration: none;
         font-size: 1.25rem;
         font-weight: bold;
-        &:hover {
-            color: $pink;
-            cursor: pointer;
+        position: relative;
+        &:hover, &.active {
+            color: $blue;
+            &::after {
+                border-bottom: 2px solid $pink;
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 50%;
+                transform: translateX(-50%);
+            }
         }
+        // &:hover {
+        //     color: $blue;
+        //     &::after {
+        //         border-bottom: 2px solid $pink;
+        //         content: "";
+        //         position: absolute;
+        //         bottom: 0;
+        //         left: 50%;
+        //         width: 50%;
+        //         transform: translateX(-50%);
+        //     }
+        // }
     }
 }
 
@@ -38,10 +59,6 @@ nav {
     font-family: $cassandra;
     color: $white;
     font-size: 1.75rem;
-}
-
-.active {
-    color: $pink !important;
 }
 
 .hamburger {

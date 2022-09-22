@@ -34,7 +34,7 @@ section {
   color: #02b6ff;
 }
 .section-title::after {
-  background: #e40cdc;
+  background: #FF1493;
 }
 
 nav {
@@ -61,26 +61,32 @@ nav {
   align-items: center;
   justify-content: center;
   list-style: none;
+  cursor: pointer;
 }
 #nav-links li {
   color: white;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
+  position: relative;
 }
-#nav-links li:hover {
-  color: #e40cdc;
-  cursor: pointer;
+#nav-links li:hover, #nav-links li.active {
+  color: #02b6ff;
+}
+#nav-links li:hover::after, #nav-links li.active::after {
+  border-bottom: 2px solid #FF1493;
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
 }
 
 .logo {
   font-family: "Cassandra", cursive;
   color: white;
   font-size: 1.75rem;
-}
-
-.active {
-  color: #e40cdc !important;
 }
 
 .hamburger {
@@ -176,14 +182,14 @@ nav {
 }
 
 .about-paragraph {
-  color: #e40cdc;
+  color: #FF1493;
   font-size: 1.5rem;
 }
 
 #hours-container {
   color: white;
   font-family: "Gotham Medium", sans-serif;
-  background-color: #e40cdc;
+  background-color: #FF1493;
   width: 80%;
   border-radius: 12px;
   padding: 12px;
@@ -351,7 +357,7 @@ footer p {
   text-decoration: none;
 }
 .attribution:hover {
-  color: #e40cdc;
+  color: #FF1493;
   text-decoration: underline;
 }
 
@@ -360,7 +366,7 @@ footer p {
   font-size: 32px;
 }
 .fa-github-square:hover {
-  color: #e40cdc;
+  color: #FF1493;
 }
 
 #attribution-grid {
