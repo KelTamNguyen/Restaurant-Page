@@ -5,7 +5,7 @@ import chineseAlmond from '../assets/cookies/almond-cookies.jpg';
 import macaroons from '../assets/cookies/macaroons.jpg';
 import chocoChip from '../assets/cookies/chocolate-chip-cookie.jpg';
 import pbBlossom from '../assets/cookies/peanut-butter-blossom.jpg';
-import biscotti from '../assets/cookies/biscotti.jpg';
+import granolaBar from '../assets/cookies/granola-bar.jpg';
 import blondie from '../assets/cookies/blondie.jpg';
 import brownie from '../assets/cookies/brownie.jpg';
 import nanaimo from '../assets/cookies/nanaimo-bar.jpg';
@@ -64,28 +64,28 @@ export default function loadMenu() {
                         <img src="${blondie}" alt="Blondie">
                         <div class="item-description">
                             <p class="item-title">Blondie</p>
-                            <p>99&cent/cookie</p>
+                            <p>99&cent/bar</p>
                         </div>
                     </div>
                     <div class="menu-item">
                         <img src="${brownie}" alt="Brownie">
                         <div class="item-description">
                             <p class="item-title">Brownie</p>
-                            <p>99&cent/cookie</p>
+                            <p>99&cent/bar</p>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="${biscotti}" alt="Biscotti">
+                        <img src="${granolaBar}" alt="Granola Bar">
                         <div class="item-description">
-                            <p class="item-title">Biscotti</p>
-                            <p>99&cent/cookie</p>
+                            <p class="item-title">Granola Bar</p>
+                            <p>99&cent/bar</p>
                         </div>
                     </div>
                     <div class="menu-item">
                         <img src="${nanaimo}" alt="Nanaimo Bar">
                         <div class="item-description">
                             <p class="item-title">Nanaimo Bar</p>
-                            <p>99&cent/cookie</p>
+                            <p>99&cent/bar</p>
                         </div>
                     </div>
                 </div>

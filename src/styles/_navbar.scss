@@ -34,24 +34,12 @@ nav {
                 border-bottom: 2px solid $pink;
                 content: "";
                 position: absolute;
-                bottom: 0;
+                bottom: -25%;
                 left: 50%;
                 width: 50%;
                 transform: translateX(-50%);
             }
         }
-        // &:hover {
-        //     color: $blue;
-        //     &::after {
-        //         border-bottom: 2px solid $pink;
-        //         content: "";
-        //         position: absolute;
-        //         bottom: 0;
-        //         left: 50%;
-        //         width: 50%;
-        //         transform: translateX(-50%);
-        //     }
-        // }
     }
 }
 

@@ -208,7 +208,7 @@ nav {
 }
 
 #menu-title {
-  color: yellow;
+  color: #02b6ff;
 }
 #menu-title::after {
   background: white;

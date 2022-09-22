@@ -7,11 +7,9 @@
     padding: 1rem 0;
 }
 
-// this @extends .sectio-title in new-home.scss
 #menu-title {
-    // @include title(yellow, $white)
     @extend %title;
-    color: yellow;
+    color: $blue;
     &::after {
         background: $white;
     }
