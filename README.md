@@ -1,1 +1,0 @@
-This is a restaurant page built with HTML, CSS and Javascript. Bundled using Webpack.
