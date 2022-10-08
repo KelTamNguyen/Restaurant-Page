@@ -4,7 +4,8 @@ import loadHome from './functions/loadHome';
 import loadMenu from "./functions/loadMenu";
 import loadContact from "./functions/loadContact";
 
-function addNavEvents() {
+const main = (function() {
+    initialPageLoad();
     const navLinks = document.getElementById('nav-links');
     const home = document.getElementById('home');
     const menu = document.getElementById('menu');
@@ -38,11 +39,4 @@ function addNavEvents() {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('show');
     });
-}
-
-function main() {
-    initialPageLoad();
-    addNavEvents();
-}
-
-main();
+})();

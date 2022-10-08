@@ -7,6 +7,12 @@
     src: url("../assets/fonts/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
 }
 
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 section {
     display: flex;
     flex-direction: column;
