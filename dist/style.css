@@ -6,6 +6,10 @@
   font-family: "Cassandra";
   src: url("../assets/fonts/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 body::-webkit-scrollbar {
   display: none;
 }
