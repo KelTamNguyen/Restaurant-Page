@@ -1,13 +1,15 @@
 @font-face {
     font-family: "Gotham Medium";
-    src: url("../assets/fonts/Gotham Medium Regular.ttf") format("truetype");
+    src: url("./assets/fonts/Gotham Medium Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Cassandra";
-    src: url("../assets/fonts/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
+    src: url("./assets/fonts/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
 }
 
 body {
+    margin: 0;
+    padding: 0;
     &::-webkit-scrollbar {
         display: none;
     }

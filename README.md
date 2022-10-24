@@ -1,1 +1,9 @@
-This is a restaurant page built with HTML, SASS and Javascript. Bundled using Webpack.
+## About
+Official website of a fictional bakery named La Pâtisserie.
+Live Demo: https://keltamnguyen.github.io/Restaurant-Page/
+
+## Built With
+- HTML
+- Javascript
+- Webpack
+- SCSS
