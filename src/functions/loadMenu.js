@@ -1,5 +1,5 @@
-import clearContent from "./clearContent";
-import footer from "../components/footer";
+import clearContent from './clearContent';
+import footer from '../components/footer';
 import blackAndWhite from '../assets/cookies/black-and-white-cookie.jpg';
 import chineseAlmond from '../assets/cookies/almond-cookies.jpg';
 import macaroons from '../assets/cookies/macaroons.jpg';
@@ -14,14 +14,14 @@ import jamThumbprint from '../assets/cookies/jam-thumbprints.jpg';
 import pizzelle from '../assets/cookies/pizzelles.jpg';
 
 export default function loadMenu() {
-    clearContent();
-    window.scroll(0, 0);
+  clearContent();
+  window.scroll(0, 0);
 
-    const content = document.getElementById('content');
+  const content = document.getElementById('content');
 
-    let menuSection = document.createElement('section');
-    menuSection.classList.add('menu-section');
-    menuSection.innerHTML = `
+  const menuSection = document.createElement('section');
+  menuSection.classList.add('menu-section');
+  menuSection.innerHTML = `
         <h1 id="menu-title">Menu</h1>
         <div id="menu-container">
             <div class="menu-category">
@@ -126,8 +126,8 @@ export default function loadMenu() {
         </div>
     `;
 
-    content.appendChild(menuSection);
+  content.appendChild(menuSection);
 
-    // load footer component
-    footer();
+  // load footer component
+  footer();
 }

@@ -1,53 +1,53 @@
-import clearContent from "./clearContent";
-import footer from "../components/footer";
-import loadMenu from "./loadMenu";
+import clearContent from './clearContent';
+import footer from '../components/footer';
+import loadMenu from './loadMenu';
 
 export default function loadHome() {
-    clearContent();
-    window.scroll(0, 0);
-    
-    const content = document.getElementById('content');
+  clearContent();
+  window.scroll(0, 0);
 
-    // hero section
-    const heroSection = document.createElement('section');
-    heroSection.id = 'hero';
+  const content = document.getElementById('content');
 
-    const messageDiv = document.createElement('div');
-    messageDiv.id = 'message';
-    let callToAction = document.createElement('h1');
-    callToAction.id = 'cta';
-    callToAction.textContent = 'Every moment with a cookie';
-    messageDiv.appendChild(callToAction);
-    let subtitle = document.createElement('h2');
-    subtitle.id = 'subtitle';
-    subtitle.textContent = '...is a moment of joy!';
-    messageDiv.appendChild(subtitle);
-    let menuBtn = document.createElement('button');
-    menuBtn.textContent = "Let's have some!";
-    menuBtn.addEventListener('click', () => {
-        const homeLink = document.getElementById('home');
-        const menuLink = document.getElementById('menu');
-        homeLink.classList.remove('active');
-        menuLink.classList.add('active');
-        loadMenu();
-    });
-    messageDiv.appendChild(menuBtn);
+  // hero section
+  const heroSection = document.createElement('section');
+  heroSection.id = 'hero';
 
-    heroSection.appendChild(messageDiv);
+  const messageDiv = document.createElement('div');
+  messageDiv.id = 'message';
+  const callToAction = document.createElement('h1');
+  callToAction.id = 'cta';
+  callToAction.textContent = 'Every moment with a cookie';
+  messageDiv.appendChild(callToAction);
+  const subtitle = document.createElement('h2');
+  subtitle.id = 'subtitle';
+  subtitle.textContent = '...is a moment of joy!';
+  messageDiv.appendChild(subtitle);
+  const menuBtn = document.createElement('button');
+  menuBtn.textContent = "Let's have some!";
+  menuBtn.addEventListener('click', () => {
+    const homeLink = document.getElementById('home');
+    const menuLink = document.getElementById('menu');
+    homeLink.classList.remove('active');
+    menuLink.classList.add('active');
+    loadMenu();
+  });
+  messageDiv.appendChild(menuBtn);
 
-    content.appendChild(heroSection);
+  heroSection.appendChild(messageDiv);
 
-    // About section
-    const aboutSection = document.createElement('section');
-    aboutSection.id = 'about';
-    let aboutTitle = document.createElement('h1');
-    aboutTitle.classList.add('section-title');
-    aboutTitle.textContent = 'About Us'
-    aboutSection.appendChild(aboutTitle);
+  content.appendChild(heroSection);
 
-    let aboutContainer = document.createElement('div');
-    aboutContainer.classList.add('about-content');
-    aboutContainer.innerHTML = `
+  // About section
+  const aboutSection = document.createElement('section');
+  aboutSection.id = 'about';
+  const aboutTitle = document.createElement('h1');
+  aboutTitle.classList.add('section-title');
+  aboutTitle.textContent = 'About Us';
+  aboutSection.appendChild(aboutTitle);
+
+  const aboutContainer = document.createElement('div');
+  aboutContainer.classList.add('about-content');
+  aboutContainer.innerHTML = `
         <div>
             <div>
                 <h1 class="about-header">Who Are We?</h1>
@@ -69,10 +69,9 @@ export default function loadHome() {
         </div>
     `;
 
-    aboutSection.appendChild(aboutContainer);
-    content.appendChild(aboutSection);
+  aboutSection.appendChild(aboutContainer);
+  content.appendChild(aboutSection);
 
-    // load footer component
-    footer();
+  // load footer component
+  footer();
 }
-

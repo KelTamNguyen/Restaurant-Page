@@ -7,3 +7,8 @@ Live Demo: https://keltamnguyen.github.io/Restaurant-Page/
 - Javascript
 - Webpack
 - SCSS
+
+## Outcomes
+- Learned how to incorporate third-party code using NPM
+- Bundle a complex application using Webpack
+- Lint code using `ESLint`
