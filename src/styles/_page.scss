@@ -1,11 +1,4 @@
-@font-face {
-    font-family: "Gotham Medium";
-    src: url("./assets/fonts/Gotham Medium Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Cassandra";
-    src: url("./assets/fonts/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
-}
+@use "vars" as theme;
 
 body {
     margin: 0;
@@ -26,7 +19,7 @@ section {
 %title {
     font-size: 3rem;
     text-align: center;
-    font-family: $cassandra;
+    font-family: theme.$cassandra;
     margin-bottom: 1.5rem;
     position: relative;
     &::after {
@@ -42,8 +35,9 @@ section {
 .section-title {
     // @include title($blue, $pink);
     @extend %title;
-    color: $blue;
+    color: theme.$blue;
     &::after {
-        background: $pink;
+        background: theme.$pink;
     }
 }
+

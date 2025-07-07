@@ -3,6 +3,8 @@ import loadHome from './functions/loadHome';
 import loadMenu from './functions/loadMenu';
 import loadContact from './functions/loadContact';
 
+import './styles/style.scss';
+
 (function () {
   initialPageLoad();
   const navLinks = document.getElementById('nav-links');

@@ -1,30 +1,44 @@
+@use "vars" as theme;
+
 .menu-section {
     text-align: center;
-    background: url('./assets/photo-1622405207562-735fa49ff7f7.avif') no-repeat;
+    background: url('../assets/photo-1622405207562-735fa49ff7f7.avif') no-repeat;
     background-size: cover;
     margin: 0;
     padding: 1rem 0;
 }
 
 #menu-title {
-    @extend %title;
-    color: $blue;
+    font-size: 3rem;
+    text-align: center;
+    font-family: theme.$cassandra;
+    margin-bottom: 1.5rem;
+    position: relative;
+    color: theme.$blue;
     &::after {
-        background: $white;
+        content: "";
+        top: 110%;
+        right: 10%;
+        width: 50%;
+        height: 2px;
+        position: absolute;
+    }
+    &::after {
+        background: theme.$white;
     }
 }
 
 #menu-container {
     width: 85%;
-    background: $containerBlack;
+    background: theme.$containerBlack;
     padding: 2rem 1rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     h1 {
-        color: $white;
-        font-family: $cassandra;
+        color: theme.$white;
+        font-family: theme.$cassandra;
         font-size: 24px;
     }
 }
@@ -49,8 +63,8 @@
 }
 
 .item-description {
-    color: $white;
-    font-family: $gothamMedium;
+    color: theme.$white;
+    font-family: theme.$gothamMedium;
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -58,7 +72,7 @@
         margin: 0;
     }
     .item-title {
-        font-family: $cassandra;
+        font-family: theme.$cassandra;
         font-size: 1.5em;
     }
 }

@@ -1,12 +1,14 @@
+@use "vars" as theme;
+
 footer {
-    background-color: $black;
+    background-color: theme.$black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    color: $white;
-    font-family: $gothamMedium;
+    color: theme.$white;
+    font-family: theme.$gothamMedium;
     font-size: 1.25rem;
     gap: 1rem;
     p {
@@ -15,19 +17,19 @@ footer {
 }
 
 .attribution {
-    color: $white;
+    color: theme.$white;
     text-decoration: none;
     &:hover {
-        color: $pink;
+        color: theme.$pink;
         text-decoration: underline;
     }
 }
 
 .fa-github-square{
-    color: $white;
+    color: theme.$white;
     font-size: 32px;
     &:hover {
-        color: $pink;
+        color: theme.$pink;
     }
 }
 

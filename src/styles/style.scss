@@ -1,7 +1,6 @@
-@import "vars";
-@import "page";
-@import "navbar";
-@import "home";
-@import "menu";
-@import "contact";
-@import "footer";
+@use "page";
+@use "navbar";
+@use "home";
+@use "menu";
+@use "contact";
+@use "footer";

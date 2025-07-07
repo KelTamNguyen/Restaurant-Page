@@ -5,3 +5,12 @@ $containerBlack: rgba(0, 0, 0, 0.8);
 $gothamMedium:'Gotham Medium', sans-serif;
 $cassandra: 'Cassandra', cursive;
 $white: white;
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../assets/fonts/Gotham Medium Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Cassandra";
+    src: url("../assets/fonts/cassandra-font/CassandraPersonalUseRegular-3BjG.ttf") format("truetype");
+}

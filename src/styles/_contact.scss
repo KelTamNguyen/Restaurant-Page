@@ -1,5 +1,7 @@
+@use "vars" as theme;
+
 #contacts {
-    background: url('./assets/menu-bg.jpg');
+    background: url('../assets/menu-bg.jpg');
     background-size: cover;
     margin: 0;
     padding: 24px 0;
@@ -7,11 +9,11 @@
 
 #contacts-container {
     color: white;
-    font-family: $gothamMedium;
+    font-family: theme.$gothamMedium;
     width: 75%;
     border-radius: 8px;
     padding: 24px;
-    background-color: $containerBlack;
+    background-color: theme.$containerBlack;
     display: flex;
     justify-content: space-between;
 }
@@ -45,15 +47,15 @@
 }
 
 button[type^="submit"] {
-    font-family: $cassandra;
-    background-color: $black;
-    color: $white;
+    font-family: theme.$cassandra;
+    background-color: theme.$black;
+    color: theme.$white;
     border-radius: 8px;
 }
 
 button[type^="submit"]:hover {
-    background-color: $white;
-    color: $black;
+    background-color: theme.$white;
+    color: theme.$black;
 }
 
 iframe {

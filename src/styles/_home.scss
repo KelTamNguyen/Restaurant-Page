@@ -1,6 +1,8 @@
+@use "vars" as theme;
+
 #hero {
     background:linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.35),rgba(0,0,0,0)),
-        url('./assets/shelf.jpg')no-repeat;
+        url('../assets/shelf.jpg')no-repeat;
     background-size: cover; 
     height: 100vh;
     z-index: 0;
@@ -13,15 +15,15 @@
 }
 
 #cta {
-    color: $white;
-    font-family: $cassandra;
+    color: theme.$white;
+    font-family: theme.$cassandra;
     font-size: 4rem;
     margin-bottom: 0;
 }
 
 #subtitle {
-    font-family: $gothamMedium;
-    color: $white;
+    font-family: theme.$gothamMedium;
+    color: theme.$white;
     font-size: 2rem;
     margin-top: 0;
 }
@@ -33,18 +35,18 @@
     gap: 1rem;
 
     button {
-        background-color: $blue;
-        color: $white;
+        background-color: theme.$blue;
+        color: theme.$white;
         padding: 0.75rem 1.5rem;
         border-radius: 25px;
         border: none;
-        font-family: $gothamMedium;
+        font-family: theme.$gothamMedium;
         cursor: pointer;
         font-size: 1.5rem;
 
         &:hover {
-            background-color: $white;
-            color: $blue;
+            background-color: theme.$white;
+            color: theme.$blue;
         }
     }
 }
@@ -60,23 +62,23 @@
     text-align: center;
     gap: 24px;
     width: 90%;
-    font-family: $gothamMedium;
+    font-family: theme.$gothamMedium;
 }
 
 .about-header {
-    color: $blue;
+    color: theme.$blue;
     font-size: 2rem;
 }
 
 .about-paragraph {
-    color: $pink;
+    color: theme.$pink;
     font-size: 1.5rem;
 }
 
 #hours-container{
-    color: $white;
-    font-family: $gothamMedium;
-    background-color: $pink;
+    color: theme.$white;
+    font-family: theme.$gothamMedium;
+    background-color: theme.$pink;
     width: 80%;
     border-radius: 12px;
     padding: 12px;
