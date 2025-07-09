@@ -1,0 +1,43 @@
+@use "vars" as theme;
+
+body {
+    margin: 0;
+    padding: 0;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+%title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: theme.$cassandra;
+    margin-bottom: 1.5rem;
+    position: relative;
+    &::after {
+        content: "";
+        top: 110%;
+        right: 10%;
+        width: 50%;
+        height: 2px;
+        position: absolute;
+    }
+}
+
+.section-title {
+    // @include title($blue, $pink);
+    @extend %title;
+    color: theme.$blue;
+    &::after {
+        background: theme.$pink;
+    }
+}
+
