@@ -6,7 +6,8 @@ import loadContact from './functions/loadContact';
 import './styles/style.scss';
 
 (function () {
-  initialPageLoad();
+  // initialPageLoad();
+  loadHome();
   const navLinks = document.getElementById('nav-links');
   const home = document.getElementById('home');
   const menu = document.getElementById('menu');

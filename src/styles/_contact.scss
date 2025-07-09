@@ -5,12 +5,13 @@
     background-size: cover;
     margin: 0;
     padding: 24px 0;
+    min-height: calc(100vh - 346px);
 }
 
 #contacts-container {
     color: white;
     font-family: theme.$gothamMedium;
-    width: 75%;
+    width: min(75%, 1200px);
     border-radius: 8px;
     padding: 24px;
     background-color: theme.$containerBlack;
